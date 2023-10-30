@@ -1,0 +1,37 @@
+.btn-getstarted {
+  display: flex;
+  padding: 10px 18px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: var(--border-border-radius-rounded-full, 9999px);
+  border: 1px solid var(--Gradient, #e94e4f);
+  background: var(
+    --Gradient,
+    linear-gradient(120deg, #e94e4f 23.84%, #ff7e3f 94.71%)
+  );
+
+  /* Shadow/xs */
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+  width: 100%;
+  outline: none;
+}
+
+.btn-signup {
+  display: flex;
+  padding: 10px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  align-self: stretch;
+  border-radius: var(--border-border-radius-rounded-full, 9999px);
+  border: 1px solid var(--gray-blue-200, #d5d9eb);
+  background: var(--base-white, #fff);
+
+  /* Shadow/xs */
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+  width: 100%;
+}
+
+
+
