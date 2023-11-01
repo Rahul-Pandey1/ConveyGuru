@@ -9,9 +9,9 @@ export default function Confirmation() {
         <Image className="" src={img} />
       </div>
 
-      <div className="py-2 pl-2  h-[450px] my-auto mx-auto flex justify-center  align-middle lg:w-[640px] w-[80%] md:px-4 md:py-4 bg-white rounded-xl shadow text-center ">
-        <div className="  my-auto mx-auto ">
-          <div class="text-center text-gray-900 text-4xl font-extrabold  leading-10">
+      <div className="py-2 pl-2  h-[450px] my-auto mx-auto flex justify-center  align-middle sm:w-[640px] sm:h-[578px] w-[80%] md:px-4 md:py-4 bg-white rounded-xl shadow text-center ">
+        <div className="  my-auto mx-auto sm:p-[128px] p-[18px] ">
+          <div class="text-center text-gray-900 text-3xl sm:text-4xl font-extrabold  leading-10">
             You are all set!
           </div>
           <div class="mt-10  text-center text-gray-800 text-2xl font-medium  leading-7 tracking-tight">
