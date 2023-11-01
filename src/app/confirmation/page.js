@@ -2,7 +2,7 @@ import Image from "next/image";
 import "../../Css/Global.css";
 import img from "../../Images/ConveyGureu_Orange 1.png";
 
-export default function OnBoarding_4() {
+export default function Confirmation() {
   return (
     <div className="w-full min-h-screen bg-red-50 flex flex-col justify-start pb-10 ">
       <div className="sm:px-[52px] sm:py-8 justify-start ">
