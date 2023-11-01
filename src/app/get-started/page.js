@@ -82,94 +82,99 @@ export default function Login() {
 
   return (
     <main className="flex lg: min-h-screen w-full   bg-white  overflow-none">
-      <div className="sm:w-[50%] w-[100%] lg:px-[140px] lg:py-[182px] p-2 mx-auto flex-col justify-center items-center gap-10 inline-flex ">
-        <Image className="" src={img} />
-        <div className="self-stretch mx-auto  flex-col justify-start items-start gap-8 inline-flex ">
-          <div className="self-stretch h-11 flex-col justify-start items-center gap-6 flex">
-            <div className="self-stretch h-11 flex-col justify-start items-start gap-3 flex">
-              <div className="self-stretch text-center text-gray-800 text-4xl font-semibold  leading-[44px]">
-                Sign up
+      <div className="w-[100%] flex flex-col gap-7">
+        <div className="w-[100%] sm:px-[5px] sm:py-[5px] lg:px-[140px] lg:py-[182px] p-2 mx-auto flex-col justify-center items-center gap-5 inline-flex h-[92vh] ">
+          <Image className="" src={img} />
+          <div className=" mx-auto  flex-col justify-start items-start gap-8 inline-flex ">
+            <div className="self-stretch h-11 flex-col justify-start items-center gap-6 flex">
+              <div className="self-stretch h-11 flex-col justify-start items-start gap-3 flex">
+                <div className="self-stretch text-center text-gray-800 text-4xl font-semibold  leading-[44px]">
+                  Sign up
+                </div>
               </div>
             </div>
-          </div>
-          <div className="self-stretch  mx-auto h-[314px] rounded-xl flex-col justify-start items-center gap-6 flex">
-            <div className="self-stretch h-[186px] flex-col justify-start items-start gap-5 flex">
-              <div className="self-stretch h-[70px] flex-col justify-start items-start gap-1.5 flex">
+            <div className="self-stretch  mx-auto h-[314px] rounded-xl flex-col justify-start items-center gap-6 flex">
+              <div className="self-stretch h-[186px] flex-col justify-start items-start gap-5 flex">
                 <div className="self-stretch h-[70px] flex-col justify-start items-start gap-1.5 flex">
-                  <div className="text-gray-800 text-sm font-medium  leading-tight">
-                    Email*
-                  </div>
+                  <div className="self-stretch h-[70px] flex-col justify-start items-start gap-1.5 flex">
+                    <div className="text-gray-800 text-sm font-medium  leading-tight">
+                      Email*
+                    </div>
 
-                  <input
-                    value={email}
-                    type="email"
-                    className="w-full text-slate-500 text-base font-normal px-3.5 py-2.5 bg-white rounded-full shadow border border-slate-300 justify-start items-center gap-2 inline-flex leading-normal"
-                    placeholder="Enter your email"
-                    onChange={(e) => setEmail(e.target.value)}
-                  />
-                </div>
-              </div>
-              <div className="self-stretch h-24 flex-col justify-start items-start gap-1.5 flex">
-                <div className="self-stretch h-[70px] flex-col justify-start items-start gap-1.5 flex">
-                  <div className="text-gray-800 text-sm font-medium  leading-tight">
-                    Password*
+                    <input
+                      value={email}
+                      type="email"
+                      className="w-full text-slate-500 text-base font-normal px-3.5 py-2.5 bg-white rounded-full shadow border border-slate-300 justify-start items-center gap-2 inline-flex leading-normal"
+                      placeholder="Enter your email"
+                      onChange={(e) => setEmail(e.target.value)}
+                    />
                   </div>
-                  <input
-                    type="password"
-                    value={password}
-                    className="w-full text-slate-500 text-base font-normal px-3.5 py-2.5 bg-white rounded-full shadow border border-slate-300 justify-start items-center gap-2 inline-flex leading-normal"
-                    placeholder="Create Your Password"
-                    onChange={(e) => setPassword(e.target.value)}
-                  />
                 </div>
-                <div className="self-stretch text-slate-500 text-sm font-normal  leading-tight">
-                  Must be at least 8 characters.
+                <div className="self-stretch h-24 flex-col justify-start items-start gap-1.5 flex">
+                  <div className="self-stretch h-[70px] flex-col justify-start items-start gap-1.5 flex">
+                    <div className="text-gray-800 text-sm font-medium  leading-tight">
+                      Password*
+                    </div>
+                    <input
+                      type="password"
+                      value={password}
+                      className="w-full text-slate-500 text-base font-normal px-3.5 py-2.5 bg-white rounded-full shadow border border-slate-300 justify-start items-center gap-2 inline-flex leading-normal"
+                      placeholder="Create Your Password"
+                      onChange={(e) => setPassword(e.target.value)}
+                    />
+                  </div>
+                  <div className="self-stretch text-slate-500 text-sm font-normal  leading-tight">
+                    Must be at least 8 characters.
+                  </div>
                 </div>
               </div>
-            </div>
-            <div className="self-stretch h-[104px] flex-col justify-start items-start gap-4 flex">
-              <button className="btn-getstarted " onClick={handleGetStarted}>
-                <span className="text-white text-base font-semibold leading-normal">
-                  Get started
-                </span>
-              </button>
+              <div className="self-stretch h-[104px] flex-col justify-start items-start gap-4 flex">
+                <button className="btn-getstarted " onClick={handleGetStarted}>
+                  <span className="text-white text-base font-semibold leading-normal">
+                    Get started
+                  </span>
+                </button>
 
-              <div className="self-stretch h-11 flex-col justify-start items-center gap-2 flex">
-                <div className="self-stretch h-11 flex-col justify-center items-center gap-3 flex">
-                  <button className="btn-signup">
-                    <Image
-                      className="w-6 h-6 relative"
-                      src={googlesvgs}
-                    ></Image>
-                    <span
-                      className="text-gray-800 text-base font-semibold  leading-normal"
-                      onClick={handlegooglesignin}
-                    >
-                      Sign up with Google
-                    </span>
-                  </button>
+                <div className="self-stretch h-11 flex-col justify-start items-center gap-2 flex">
+                  <div className="self-stretch h-11 flex-col justify-center items-center gap-3 flex">
+                    <button className="btn-signup">
+                      <Image
+                        className="w-6 h-6 relative"
+                        src={googlesvgs}
+                      ></Image>
+                      <span
+                        className="text-gray-800 text-base font-semibold  leading-normal"
+                        onClick={handlegooglesignin}
+                      >
+                        Sign up with Google
+                      </span>
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div className="self-stretch justify-center  mx-auto items-start gap-1 inline-flex">
-            <div className="text-slate-500 text-sm font-normal  leading-tight">
-              Already have an account?
-            </div>
-            <div className="justify-center items-center gap-2 flex">
-              <a
-                href="#"
-                className="text-orange-500 text-sm font-semibold  leading-tight"
-                onClick={handleSignIn}
-              >
-                Log in
-              </a>
+            <div className="self-stretch justify-center  mx-auto items-start gap-1 inline-flex">
+              <div className="text-slate-500 text-sm font-normal  leading-tight">
+                Already have an account?
+              </div>
+              <div className="justify-center items-center gap-2 flex">
+                <a
+                  href="#"
+                  className="text-orange-500 text-sm font-semibold  leading-tight"
+                  onClick={handleSignIn}
+                >
+                  Log in
+                </a>
+              </div>
             </div>
           </div>
         </div>
+        <div class="text-slate-600 text-sm font-normal font-['Inter'] pl-4 leading-tight">
+          © Convey Guru Limited, 2023
+        </div>
       </div>
 
-      <div className="sm:w-[50%] w-[100%] hidden relative opacity-80 bg-gradient-to-br from-red-500 to-orange-400 sm:flex items-center justify-center">
+      <div className=" w-[100%]  hidden relative opacity-80 bg-gradient-to-br from-red-500 to-orange-400 sm:flex items-center justify-center">
         <Image
           fill
           className="absolute inset-0 h-full sm:w-full sm:object-cover  z-10"
